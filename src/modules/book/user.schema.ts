@@ -9,7 +9,6 @@ const userCore = {
     })
     .email(),
   name: z.string(),
-  teamId:z.number()
 };
 
 const createUserSchema = z.object({
@@ -47,5 +46,5 @@ export const { schemas: userSchemas, $ref } = buildJsonSchemas({
   createUserSchema,
   createUserResponseSchema,
   loginSchema,
-  loginResponseSchema,                         
+  loginResponseSchema,
 });
